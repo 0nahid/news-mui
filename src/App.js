@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import News from './components/News/News';
+// import News from './components/News/News';
+import Chart from './components/Chart/Chart';
 
 function App() {
   const apiKey = 'https://newsapi.org/v2/top-headlines?country=us&?q=nasa&ln=en&apiKey=6b23a9ae371c4946a324f098d26ca7da';
@@ -11,7 +12,8 @@ function App() {
   })
   return (
     <div>
-      {articles.map(article => <News news={article} key={article.url} ></News>)}
+      {/* {articles.map(article => <News news={article} key={article.url} ></News>)} */}
+      <Chart></Chart>
     </div>
   );
 }
